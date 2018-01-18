@@ -182,10 +182,13 @@ function resolveSudoku(grid, linha, coluna) {
 
 //inicia resolução do sudoku
 function start(){
+    //se o sudoku não foi gerado, ou seja, foi informado pelo jogador
     if(sudokuGerado.length === 0){
+        //inicia valor das células com o informado pelo jogador
         celulas = document.getElementsByTagName("input");
 
         var indiceInterno = 0;
+        //gera array com linhas e colunas com os valores informados pelo jogador
         for(indice = 0; indice < celulas.length; indice++){
             if(sudokuGerado[Math.floor(indice/9)] === undefined){
                 sudokuGerado[Math.floor(indice/9)] = [];
@@ -197,6 +200,7 @@ function start(){
                 indiceInterno++;
             }
         }
+        //bloqueia entradas
         bloqueiaEntradas();
     }
 
