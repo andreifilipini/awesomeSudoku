@@ -61,8 +61,24 @@ function bloqueiaEntradas(){
 function removeValoresRandom(){
     //para cada linha do sudoku
     sudokuGerado.map(function(linha){
-        //randomiza se serão removidos 4 ou 5 valores
-        var qtdRemover = Math.floor(Math.random()) == 1 ? 4 : 5;
+        //randomiza a quantidade de valores que será removida de acordo com o nível selecionado pelo jogador
+        var min = 0;
+        var max = 0;
+        switch(document.getElementById("nivel").value){
+            case "0":
+                min = 3;
+                max = 4;
+                break;
+            case "1":
+                min = 5;
+                max = 6;
+                break;
+            case "2":
+                min = 7;
+                max = 8;
+                break;
+        }
+        var qtdRemover = Math.floor(Math.random()*2) == 1 ? min : max;
         do{
             //gera um indice randomico entre 0 e a quantidade de celulas da linha
             var randomIndex = Math.floor(Math.random()*linha.length);
