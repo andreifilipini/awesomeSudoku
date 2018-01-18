@@ -182,6 +182,24 @@ function resolveSudoku(grid, linha, coluna) {
 
 //inicia resolução do sudoku
 function start(){
+    if(sudokuGerado.length === 0){
+        celulas = document.getElementsByTagName("input");
+
+        var indiceInterno = 0;
+        for(indice = 0; indice < celulas.length; indice++){
+            if(sudokuGerado[Math.floor(indice/9)] === undefined){
+                sudokuGerado[Math.floor(indice/9)] = [];
+            }
+            sudokuGerado[Math.floor(indice/9)][indiceInterno] = celulas[indice].value;
+            if(indiceInterno === 8){
+                indiceInterno = 0;
+            } else {
+                indiceInterno++;
+            }
+        }
+        bloqueiaEntradas();
+    }
+
     //reseta quantidade de iterações
     iteracoes = 0;
 
@@ -193,6 +211,15 @@ function start(){
     
     //exibe no console número de iterações
     console.log("iterações: " + iteracoes);
+}
+
+//limpa entradas
+function reset(){
+    for(indice = 0; indice < celulas.length; indice++){
+        celulas[indice].value = "";
+    }
+    sudokuGerado = [];
+    bloqueiaEntradas();
 }
 
 //método responsável por procurar a próxima celula vazia partindo da posição informada
