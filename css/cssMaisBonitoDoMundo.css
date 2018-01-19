@@ -1,0 +1,109 @@
+*{
+    font-family: sans-serif;
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+   margin: 0; 
+}
+.titulo{
+    margin: 0 50px;
+    display: flex;
+    text-align: center;
+}
+p{
+    text-align: center;
+    margin-top: 12px;
+}
+.tabela{
+    margin: 20px;
+}
+.tabela input{
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    background:  #cccccc;
+}
+.agrupa{
+    width: 700px;
+    display: flex;
+}
+.opcoes{
+    width: 150px;
+    margin-top:10px;
+}
+.opcoes select{
+    width: 140px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 14px;
+}
+button{
+    border: none;
+    width: 140px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+input[type=number]:disabled{
+    opacity: 0.5;
+}
+#img-e img, #img-d img{
+    height: 40px;
+}
+/* TEMA 1 : LAVANDA*/
+.tema1 .bloco1 input, .tema1 .bloco3 input, .tema1 .bloco5 input, .tema1 .bloco7 input, .tema1 .bloco9 input{
+    background-color: #a691c9;
+    color:#e6e6ff;
+}
+.tema1 .bloco2 input, .tema1 .bloco4 input, .tema1 .bloco6 input, .tema1 .bloco8 input, .tema1 .bloco10 input{
+    background-color: #e6e6ff;
+    color:#4d4dff;
+}
+.tema1 button{
+    background-color: #9392d8;
+}
+.tema1 select{
+    color: #a691c9;
+}
+.tema1 p {
+    color:#4e3879;
+}
+/* TEMA 2 : AQUA*/
+.tema2 .bloco1 input, .tema2 .bloco3 input, .tema2 .bloco5 input, .tema2 .bloco7 input, .tema2 .bloco9 input{
+    background-color: #0a7d7c;
+    color:#b7e8e3;
+}
+.tema2 .bloco2 input, .tema2 .bloco4 input, .tema2 .bloco6 input, .tema2 .bloco8 input, .tema2 .bloco10 input{
+    background-color: #b7e8e3;
+    color:#009999;
+}
+.tema2 button{
+    background-color: #4bc9c3;
+}
+.tema2 select{
+    color: #1fb4b9;
+}
+.tema2 p {
+    color:#1fb4b9;
+}
+/* TEMA 3 : FOGO*/
+.tema3 .bloco1 input, .tema3 .bloco3 input, .tema3 .bloco5 input, .tema3 .bloco7 input, .tema3 .bloco9 input{
+    background-color: #fe602e;
+    color:#fdf6b4;
+}
+.tema3 .bloco2 input, .tema3 .bloco4 input, .tema3 .bloco6 input, .tema3 .bloco8 input, .tema3 .bloco10 input{
+    background-color: #fdf6b4;
+    color:#fe602e;
+}
+.tema3 button{
+    background-color: #fe9542;
+}
+.tema3 select{
+    color: #fe3d1d;
+}
+.tema3 p {
+    color:#fe3d1d;
+}

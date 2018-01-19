@@ -315,3 +315,65 @@ function validaGrupo(grid, linha, coluna, valor) {
 
     return true;
 }
+function mudaTema(){
+    var element = document.getElementById("corpo");
+    switch(document.getElementById("tema").value){
+        case "0":
+            /*Remove as imagens anteriores*/
+            var elementoe = document.getElementById("img-e");
+            var elementod = document.getElementById("img-d");
+            elementoe.removeChild(elementoe.firstChild);
+            elementod.removeChild(elementod.firstChild);
+            
+            /*Adiciona as imagens relacionadas ao tema*/
+            var imge = document.createElement("IMG");
+            var imgd = document.createElement("IMG");
+            imge.src = "imagens/lavanda-e.png";
+            imgd.src = "imagens/lavanda-d.png";
+            document.getElementById('img-e').appendChild(imge);
+            document.getElementById('img-d').appendChild(imgd);
+            
+            /*Adiciona o tema*/
+            element.classList.add("tema1");
+            element.classList.remove("tema2", "tema3");
+            break;
+        case "1":
+            /*Remove as imagens anteriores*/
+            var elementoe = document.getElementById("img-e");
+            var elementod = document.getElementById("img-d");
+            elementoe.removeChild(elementoe.firstChild);
+            elementod.removeChild(elementod.firstChild);
+            
+            /*Adiciona as imagens relacionadas ao tema*/
+            var imge = document.createElement("IMG");
+            var imgd = document.createElement("IMG");
+            imge.src = "imagens/aqua-e.png";
+            imgd.src = "imagens/aqua-d.png";
+            document.getElementById('img-e').appendChild(imge);
+            document.getElementById('img-d').appendChild(imgd);
+            
+            /*Adiciona o tema*/
+            element.classList.add("tema2");
+            element.classList.remove("tema1", "tema3");
+            break;
+        case "2":
+            /*Remove as imagens anteriores*/
+            var elementoe = document.getElementById("img-e");
+            var elementod = document.getElementById("img-d");
+            elementoe.removeChild(elementoe.firstChild);
+            elementod.removeChild(elementod.firstChild);
+            
+            /*Adiciona as imagens relacionadas ao tema*/
+            var imge = document.createElement("IMG");
+            var imgd = document.createElement("IMG");
+            imge.src = "imagens/fogo.png";
+            imgd.src = "imagens/fogo.png";
+            document.getElementById('img-e').appendChild(imge)
+            document.getElementById('img-d').appendChild(imgd);
+            
+            /*Adiciona o tema*/
+            element.classList.add("tema3");
+            element.classList.remove("tema1", "tema2");
+            break;
+    }
+}

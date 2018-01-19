@@ -1,282 +1,300 @@
-<html><head>
+<html>
+    <head>
         <link rel="stylesheet" type="text/css" href="css/cssMaisBonitoDoMundo.css">
         <script src="util.js"></script>
         <script src="sudoku.js"></script>
+        <meta charset="utf-8">
     </head>
-    <body>
-        <p>
-            Informe seu sudoku para que seja resolvido ou gere um e se divirta!
-        </p>
-        <table class="tabela">
-            <tbody><tr class="linha1">
-                <td class="coluna1 bloco1">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna2 bloco1">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna3 bloco1">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna4 bloco2">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna5 bloco2">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna6 bloco2">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna7 bloco3">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna8 bloco3">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna9 bloco3">
-                    <input type="number" min="1" max="9">
-                </td>
-            </tr>
-            <tr class="linha2">
-                <td class="coluna1 bloco1">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna2 bloco1">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna3 bloco1">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna4 bloco2">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna5 bloco2">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna6 bloco2">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna7 bloco3">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna8 bloco3">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna9 bloco3">
-                    <input type="number" min="1" max="9">
-                </td>
-            </tr>
-            <tr class="linha3">
-                <td class="coluna1 bloco1">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna2 bloco1">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna3 bloco1">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna4 bloco2">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna5 bloco2">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna6 bloco2">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna7 bloco3">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna8 bloco3">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna9 bloco3">
-                    <input type="number" min="1" max="9">
-                </td>
-            </tr>
-            <tr class="linha4">
-                <td class="coluna1 bloco4">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna2 bloco4">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna3 bloco4">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna4 bloco5">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna5 bloco5">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna6 bloco5">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna7 bloco6">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna8 bloco6">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna9 bloco6">
-                    <input type="number" min="1" max="9">
-                </td>
-            </tr>
-            <tr class="linha5">
-                <td class="coluna1 bloco4">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna2 bloco4">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna3 bloco4">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna4 bloco5">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna5 bloco5">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna6 bloco5">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna7 bloco6">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna8 bloco6">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna9 bloco6">
-                    <input type="number" min="1" max="9">
-                </td>
-            </tr>
-            <tr class="linha6">
-                <td class="coluna1 bloco4">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna2 bloco4">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna3 bloco4">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna4 bloco5">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna5 bloco5">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna6 bloco5">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna7 bloco6">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna8 bloco6">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna9 bloco6">
-                    <input type="number" min="1" max="9">
-                </td>
-            </tr>
-            <tr class="linha7">
-                <td class="coluna1 bloco7">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna2 bloco7">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna3 bloco7">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna4 bloco8">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna5 bloco8">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna6 bloco8">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna7 bloco9">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna8 bloco9">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna9 bloco9">
-                    <input type="number" min="1" max="9">
-                </td>
-            </tr>
-            <tr class="linha8">
-                <td class="coluna1 bloco7">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna2 bloco7">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna3 bloco7">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna4 bloco8">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna5 bloco8">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna6 bloco8">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna7 bloco9">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna8 bloco9">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna9 bloco9">
-                    <input type="number" min="1" max="9">
-                </td>
-            </tr>
-            <tr class="linha9">
-                <td class="coluna1 bloco7">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna2 bloco7">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna3 bloco7">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna4 bloco8">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna5 bloco8">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna6 bloco8">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna7 bloco9">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna8 bloco9">
-                    <input type="number" min="1" max="9">
-                </td>
-                <td class="coluna9 bloco9">
-                    <input type="number" min="1" max="9">
-                </td>
-            </tr>
-        </tbody></table>
-        <button onclick="javascript:geraSudoku()">Gera Sudoku</button>
-        <span>Nível: </span>
-        <select id="nivel">
-            <option value="0" selected>F&aacute;cil</option>
-            <option value="1">M&eacute;dio</option>
-            <option value="2">Dif&iacute;cil</option>
-        </select>
-        <button onclick="javascript:start()">Resolve Sudoku</button>
-        <button onclick="javascript:reset()">Limpar Tudo</button>
-</body></html>
+    <body id="corpo" class="">
+        <div class="titulo">
+            <div id="img-e"><img></div>
+            <p>
+                Informe seu sudoku para que seja resolvido ou gere um e se divirta!
+            </p>
+            <div id="img-d"><img></div>
+        </div>
+        <div class="agrupa">
+            <table class="tabela" >
+                <tbody>
+                    <tr class="linha1">
+                        <td class="coluna1 bloco1">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna2 bloco1">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna3 bloco1">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna4 bloco2">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna5 bloco2">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna6 bloco2">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna7 bloco3">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna8 bloco3">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna9 bloco3">
+                            <input type="number" min="1" max="9">
+                        </td>
+                    </tr>
+                    <tr class="linha2">
+                        <td class="coluna1 bloco1">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna2 bloco1">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna3 bloco1">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna4 bloco2">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna5 bloco2">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna6 bloco2">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna7 bloco3">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna8 bloco3">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna9 bloco3">
+                            <input type="number" min="1" max="9">
+                        </td>
+                    </tr>
+                    <tr class="linha3">
+                        <td class="coluna1 bloco1">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna2 bloco1">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna3 bloco1">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna4 bloco2">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna5 bloco2">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna6 bloco2">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna7 bloco3">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna8 bloco3">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna9 bloco3">
+                            <input type="number" min="1" max="9">
+                        </td>
+                    </tr>
+                    <tr class="linha4">
+                        <td class="coluna1 bloco4">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna2 bloco4">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna3 bloco4">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna4 bloco5">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna5 bloco5">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna6 bloco5">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna7 bloco6">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna8 bloco6">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna9 bloco6">
+                            <input type="number" min="1" max="9">
+                        </td>
+                    </tr>
+                    <tr class="linha5">
+                        <td class="coluna1 bloco4">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna2 bloco4">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna3 bloco4">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna4 bloco5">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna5 bloco5">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna6 bloco5">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna7 bloco6">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna8 bloco6">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna9 bloco6">
+                            <input type="number" min="1" max="9">
+                        </td>
+                    </tr>
+                    <tr class="linha6">
+                        <td class="coluna1 bloco4">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna2 bloco4">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna3 bloco4">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna4 bloco5">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna5 bloco5">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna6 bloco5">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna7 bloco6">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna8 bloco6">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna9 bloco6">
+                            <input type="number" min="1" max="9">
+                        </td>
+                    </tr>
+                    <tr class="linha7">
+                        <td class="coluna1 bloco7">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna2 bloco7">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna3 bloco7">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna4 bloco8">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna5 bloco8">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna6 bloco8">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna7 bloco9">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna8 bloco9">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna9 bloco9">
+                            <input type="number" min="1" max="9">
+                        </td>
+                    </tr>
+                    <tr class="linha8">
+                        <td class="coluna1 bloco7">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna2 bloco7">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna3 bloco7">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna4 bloco8">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna5 bloco8">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna6 bloco8">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna7 bloco9">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna8 bloco9">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna9 bloco9">
+                            <input type="number" min="1" max="9">
+                        </td>
+                    </tr>
+                    <tr class="linha9">
+                        <td class="coluna1 bloco7">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna2 bloco7">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna3 bloco7">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna4 bloco8">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna5 bloco8">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna6 bloco8">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna7 bloco9">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna8 bloco9">
+                            <input type="number" min="1" max="9">
+                        </td>
+                        <td class="coluna9 bloco9">
+                            <input type="number" min="1" max="9">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="opcoes">
+                <button onclick="javascript:geraSudoku()">Gerar Sudoku</button>
+                <select id="nivel">
+                    <option value="0" selected>F&aacute;cil</option>
+                    <option value="1">M&eacute;dio</option>
+                    <option value="2">Dif&iacute;cil</option>
+                </select>
+                <button onclick="javascript:start()">Resolver Sudoku</button>
+                <button onclick="javascript:reset()">Limpar Tudo</button>
+                <select id="tema" onchange="javascript:mudaTema()">
+                    <option selected>Selecione</option>
+                    <option value="0" >Lavanda</option>
+                    <option value="1">Aqua</option>
+                    <option value="2">Fogo</option>
+                </select>
+            </div>
+        </div>
+    </body>
+</html>
